@@ -1,3 +1,9 @@
+// This code defines a DeleteCustomer class for a banking application using Java Swing.
+// The class provides a user interface to delete a customer's record from a file.
+// It includes methods to load records from the file, find a specific record, confirm deletion, and delete the record.
+// The user can enter an account number, and the application will display the corresponding customer details.
+// If the user confirms, the record is deleted from the file.
+
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
