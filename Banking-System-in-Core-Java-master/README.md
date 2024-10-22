@@ -75,9 +75,22 @@ demo- https://projectworlds.in/java-projects-with-source-code/banking-system-in-
 Here's a simplified representation of the system architecture:
 
 
-
-±--------------------+ ±--------------------+ | User Interface | | Application Logic | |---------------------| |---------------------| | - Splash | | - Data Handling | | - ViewCustomer |<----->| - Business Logic | | - ViewOne | ±--------------------+ | - WithdrawMoney | | ±--------------------+ | | v ±--------------------+ | Database | |---------------------| | - File Storage | | (Bank.dat) | ±--------------------+
-
++---------------------+       +---------------------+
+|      User Interface |       |   Application Logic |
+|---------------------|       |---------------------|
+| - Splash            |       | - Data Handling     |
+| - ViewCustomer      |<----->| - Business Logic    |
+| - ViewOne           |       +---------------------+
+| - WithdrawMoney     |               |
++---------------------+               |
+                                       |
+                                       v
+                             +---------------------+
+                             |      Database       |
+                             |---------------------|
+                             | - File Storage      |
+                             |   (Bank.dat)        |
+                             +---------------------+
 
 
 
