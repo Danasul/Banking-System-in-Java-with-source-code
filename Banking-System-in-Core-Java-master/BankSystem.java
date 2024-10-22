@@ -1,3 +1,8 @@
+// This code defines a banking system application using Java Swing.
+// The BankSystem class creates the main window with a menu bar, toolbar, and status bar.
+// It includes various menu options for file operations, editing, viewing, options, window management, and help.
+// The application also handles user interactions through action listeners and item listeners.
+
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
@@ -666,7 +671,7 @@ public class BankSystem extends JFrame implements ActionListener, ItemListener {
 		String data3 = "  Customer Name:     " + records[rec][1] + "\n";
 		String data4 = "  Last Transaction:  " + records[rec][2] + ", " + records[rec][3] + ", " + records[rec][4] + "\n";
 		String data5 = "  Current Balance:   " + records[rec][5] + "\n\n";
-		String data6 = "          Copyright © 2003 Muhammad Wasif Javed.\n";	//Page Footer.
+		String data6 = "          Copyright Â© 2003 Muhammad Wasif Javed.\n";	//Page Footer.
 		String sep0 = " -----------------------------------------------------------\n";
 		String sep1 = " -----------------------------------------------------------\n";
 		String sep2 = " -----------------------------------------------------------\n";
