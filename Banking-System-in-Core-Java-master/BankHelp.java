@@ -1,3 +1,7 @@
+// This code defines a help window for a banking application using Java Swing.
+// The BankHelp class creates an internal frame that displays HTML content from a specified file.
+// The HtmlPane class handles the loading and displaying of the HTML content, including hyperlink navigation.
+
 import javax.swing.*;
 import java.awt.*;
 import java.net.URL;
@@ -8,99 +12,99 @@ import javax.swing.event.*;
 
 public class BankHelp extends JInternalFrame {
 
-	public BankHelp (String title, String filename) {
+    public BankHelp (String title, String filename) {
 
-		// super(Title, Resizable, Closable, Maximizable, Iconifiable)
-		super (title, false, true, false, true);
-		setSize (500, 350);
+        // super(Title, Resizable, Closable, Maximizable, Iconifiable)
+        super (title, false, true, false, true);
+        setSize (500, 350);
 
-		HtmlPane html = new HtmlPane (filename);
-		setContentPane (html);
+        HtmlPane html = new HtmlPane (filename);
+        setContentPane (html);
 
-		setVisible (true);
+        setVisible (true);
 
-	}
+    }
 
 }
 
 class HtmlPane extends JScrollPane implements HyperlinkListener {
 
-	JEditorPane html;
+    JEditorPane html;
 
-	public HtmlPane(String filename) {
+    public HtmlPane(String filename) {
 
-		try {
-			File f = new File (filename);
-			String s = f.getAbsolutePath();
-			s = "file:"+s;
-			URL url = new URL(s);
-			html = new JEditorPane(s);
-			html.setEditable(false);
-			html.addHyperlinkListener(this);
-			JViewport vp = getViewport();
-			vp.add(html);
-		}
-		catch (MalformedURLException e) {
-			System.out.println("Malformed URL: " + e);
-		}
-		catch (IOException e) {
-			System.out.println("IOException: " + e);
-		}
+        try {
+            File f = new File (filename);
+            String s = f.getAbsolutePath();
+            s = "file:"+s;
+            URL url = new URL(s);
+            html = new JEditorPane(s);
+            html.setEditable(false);
+            html.addHyperlinkListener(this);
+            JViewport vp = getViewport();
+            vp.add(html);
+        }
+        catch (MalformedURLException e) {
+            System.out.println("Malformed URL: " + e);
+        }
+        catch (IOException e) {
+            System.out.println("IOException: " + e);
+        }
 
-	}
+    }
 
-	public void hyperlinkUpdate(HyperlinkEvent e) {
-	
-		if (e.getEventType() == HyperlinkEvent.EventType.ACTIVATED) {
-			linkActivated(e.getURL());
-		}
-	}
+    public void hyperlinkUpdate(HyperlinkEvent e) {
+    
+        if (e.getEventType() == HyperlinkEvent.EventType.ACTIVATED) {
+            linkActivated(e.getURL());
+        }
+    }
 
-	protected void linkActivated(URL u) {
+    protected void linkActivated(URL u) {
 
-		Cursor c = html.getCursor();
-		Cursor waitCursor = Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR);
-		html.setCursor(waitCursor);
-		SwingUtilities.invokeLater(new PageLoader(u, c));
+        Cursor c = html.getCursor();
+        Cursor waitCursor = Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR);
+        html.setCursor(waitCursor);
+        SwingUtilities.invokeLater(new PageLoader(u, c));
 
-	}
+    }
 
-	class PageLoader implements Runnable {
+    class PageLoader implements Runnable {
 
-		PageLoader(URL u, Cursor c) {
+        PageLoader(URL u, Cursor c) {
 
-			url = u;
-			cursor = c;
+            url = u;
+            cursor = c;
 
-		}
+        }
 
-		public void run() {
-	
-			if (url == null) {
-				html.setCursor(cursor);
-				Container parent = html.getParent();
-				parent.repaint();
-			}
-			else {
-				Document doc = html.getDocument();
-				try {
-					html.setPage(url);
-				}
-				catch (IOException ioe) {
-					html.setDocument(doc);
-					getToolkit().beep();
-				}
-				finally {
-					url = null;
-					SwingUtilities.invokeLater(this);
-				}
-			}
+        public void run() {
+    
+            if (url == null) {
+                html.setCursor(cursor);
+                Container parent = html.getParent();
+                parent.repaint();
+            }
+            else {
+                Document doc = html.getDocument();
+                try {
+                    html.setPage(url);
+                }
+                catch (IOException ioe) {
+                    html.setDocument(doc);
+                    getToolkit().beep();
+                }
+                finally {
+                    url = null;
+                    SwingUtilities.invokeLater(this);
+                }
+            }
 
-		}
+        }
 
-		URL url;
-		Cursor cursor;
+        URL url;
+        Cursor cursor;
 
-	}
+    }
 
 }
