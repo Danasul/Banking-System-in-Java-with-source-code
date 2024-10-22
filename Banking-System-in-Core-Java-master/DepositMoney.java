@@ -1,3 +1,9 @@
+// This code defines a DepositMoney class for a banking application using Java Swing.
+// The class provides a user interface to deposit money into a customer's account.
+// It includes methods to load records from a file, find a specific record, and update the deposit amount.
+// The user can enter an account number, and the application will display the corresponding customer details.
+// The user can then enter the deposit amount and save the updated information.
+
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
