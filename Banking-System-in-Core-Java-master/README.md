@@ -72,7 +72,6 @@ demo- https://projectworlds.in/java-projects-with-source-code/banking-system-in-
 
 ### Architecture Diagram
 
-Here's a simplified representation of the system architecture:
 
 
 +---------------------+       +---------------------+
