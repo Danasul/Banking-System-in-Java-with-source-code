@@ -1,3 +1,17 @@
+/**
+ * This Java program is a graphical user interface (GUI) application for searching customer accounts.
+ * It allows users to input an account number and retrieve the corresponding account details
+ * such as the account holder's name, last transaction date, and balance.
+ * The application reads account data from a file and displays the information in a user-friendly format.
+ * 
+ * Features:
+ * - Input validation to ensure only numeric account numbers are entered.
+ * - Search functionality to find and display account details.
+ * - Clear and cancel options to reset the form or close the window.
+ * 
+ * Author: [dana]
+ */
+
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
