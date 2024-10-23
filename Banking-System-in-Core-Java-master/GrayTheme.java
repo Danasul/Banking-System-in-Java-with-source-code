@@ -1,3 +1,13 @@
+/**
+ * This program defines a custom theme for Java's Metal Look and Feel, named "Cool Gray".
+ * The theme extends the DefaultMetalTheme class and overrides the primary color scheme with shades of gray.
+ * It specifies three primary colors that are used throughout the user interface to give it a cool gray appearance.
+ * The getName method returns the name of the theme, and the getPrimary1, getPrimary2, and getPrimary3 methods return 
+ * the custom colors.
+ * Author: [dana]
+ */
+
+
 import javax.swing.plaf.*;
 import javax.swing.plaf.metal.*;
 import javax.swing.*;
