@@ -5,7 +5,6 @@
  * The user interface includes text fields for data entry and buttons to perform search and cancel operations.
  * The search operation matches the entered customer name with the records loaded from the file.
  * Author: [dana]
- 
  */
 
 
