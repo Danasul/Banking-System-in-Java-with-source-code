@@ -1,3 +1,13 @@
+/**
+ * This program defines a custom theme for Java's Metal Look and Feel, named "Greenish".
+ * The theme extends the DefaultMetalTheme class and overrides the primary and secondary color schemes with shades of green.
+ * It specifies three primary colors and two secondary colors that are used throughout the user interface to give it a greenish appearance.
+ * The getName method returns the name of the theme, and the getPrimary1, getPrimary2, getPrimary3, getSecondary2, and getSecondary3 methods 
+ * return the custom colors.
+ * Author: [Your Name]
+ */
+
+
 import javax.swing.plaf.*;
 import javax.swing.plaf.metal.*;
 import javax.swing.*;
