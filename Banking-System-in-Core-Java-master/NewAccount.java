@@ -1,3 +1,10 @@
+// This class defines a GUI-based application for creating a new bank account.
+// The form collects essential details like Account Number, Person's Name, Deposit Date, and Deposit Amount.
+// It ensures input validation, prevents duplicate account numbers, and saves the account details to a file (Bank.dat).
+// The form provides Save and Cancel options, allowing users to save new records or close the form without saving.
+
+
+
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
