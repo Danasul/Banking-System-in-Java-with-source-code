@@ -1,3 +1,14 @@
+/**
+ * This program is a Java application that uses a graphical user interface (GUI) to search for customer account information in a banking system.
+ * The program loads records from a data file and allows the user to search for customer accounts by entering the customer's name.
+ * When an account is found, the program displays the account details such as account number, customer name, last transaction, and balance.
+ * The user interface includes text fields for data entry and buttons to perform search and cancel operations.
+ * The search operation matches the entered customer name with the records loaded from the file.
+ * Author: [dana]
+ 
+ */
+
+
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
