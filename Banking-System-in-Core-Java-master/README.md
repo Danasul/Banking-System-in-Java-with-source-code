@@ -158,7 +158,34 @@ This module implements various security features to protect user data and transa
 This section highlights important parts of the Java banking system application, specifically focusing on account creation and money withdrawal functionalities.
 
 ---
+### NewAccount.java
 
+This class handles the creation of new accounts within the banking system.
+
+**Main Benefits**:
+1. **Graphical User Interface (GUI)**:  
+   Utilizes the **Swing** library to create a user-friendly interface for account data input.
+   
+2. **Data Collection**:  
+   Collects the following account information:
+   - Account number
+   - Account holder name
+   - Deposit date
+   - Deposit amount
+   
+3. **Input Validation**:  
+   The code includes input validation to:
+   - Ensure no fields are left empty.
+   - Check that the account number and deposit amount are numeric.
+   
+4. **Data Storage**:  
+   Saves account data to a text file (**Bank.dat**) using data streams, ensuring persistence even after the program is closed.
+   
+5. **Duplicate Account Prevention**:  
+   Prevents the creation of duplicate accounts by verifying that the account number does not already exist.
+
+6. **User-Friendly Experience**:  
+   Provides buttons for saving or canceling the operation, improving usability.
 
 ### WithdrawMoney.java
 
