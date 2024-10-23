@@ -102,3 +102,53 @@ demo- https://projectworlds.in/java-projects-with-source-code/banking-system-in-
 2. **User withdraws money**:
    - The `WithdrawMoney` component captures the withdrawal details and sends them to the application logic.
    - The application logic updates the customer's balance and saves the updated records back to `Bank.dat`.
+
+
+
+
+## Code Snippets and Examples
+
+This section highlights important parts of the Java banking system application, specifically focusing on account creation and money withdrawal functionalities.
+
+---
+
+
+### WithdrawMoney.java
+
+This class handles the withdrawal of money from existing accounts.
+
+**Main Benefits**:
+1. **Graphical User Interface (GUI)**:  
+   Designed using **Swing** to create an intuitive interface for users to input withdrawal details.
+
+2. **Account Information Retrieval**:  
+   Automatically retrieves and displays account details (e.g., account holder name, balance) when the account number is entered.
+
+3. **Input Validation**:  
+   Ensures that:
+   - Fields such as account number and withdrawal amount are not empty.
+   - The withdrawal amount does not exceed the available balance.
+   
+4. **Data Handling**:  
+   Loads account records from a file (**Bank.dat**) and updates these records after a successful withdrawal.
+
+5. **Balance Management**:  
+   Updates the account balance after each withdrawal, ensuring accurate financial management.
+
+6. **Error Handling**:  
+   Displays informative error messages in case of invalid inputs, such as:
+   - Nonexistent account numbers.
+   - Insufficient funds.
+   
+7. **Data Persistence**:  
+   Ensures that changes (like updated balances) are saved back to the file, allowing for persistence across application sessions.
+
+8. **User-Friendly Experience**:  
+   Offers buttons to save or cancel the operation, contributing to a better user experience.
+
+---
+
+These examples demonstrate how the Java banking system provides a robust, user-friendly experience while maintaining data integrity and security.
+
+
+
