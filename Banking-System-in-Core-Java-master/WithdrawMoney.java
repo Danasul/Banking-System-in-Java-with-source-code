@@ -1,3 +1,14 @@
+/**
+ * This class `WithdrawMoney` is a GUI-based Java application for managing withdrawal transactions in a banking system.
+ * The class provides fields for the user to input account details, including account number, withdrawal date, and amount.
+ * It validates the account number and checks whether the withdrawal amount is within the account's balance.
+ * The system loads and updates account data from a file named "Bank.dat", using an array to store records temporarily in memory.
+ * The class also provides functionality to edit and save records back to the file after a successful withdrawal.
+ */
+
+
+
+
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
