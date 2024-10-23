@@ -29,7 +29,7 @@ visit more projects - https://projectworlds.in
 
 demo- https://projectworlds.in/java-projects-with-source-code/banking-system-in-java-with-source-code/
 
-
+---
 ### Major Components
 
 1. **User Interface (UI)**:
