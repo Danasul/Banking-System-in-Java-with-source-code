@@ -1,3 +1,21 @@
+/**
+ * The ViewCustomer class represents a GUI window in the banking system that displays all account holders' information in a table.
+
+ 
+ * Main Features:
+ * - Loads customer records from a file ("Bank.dat") and displays them in a table.
+ * - The table includes columns for Account No., Customer Name, Opening Date, and Bank Balance.
+ * - The table cells are non-editable, providing a read-only view of customer data.
+
+ * This class fetches data from the "Bank.dat" file, stores it in a 2D array, and then populates the JTable with that data.
+
+ */
+
+
+
+
+
+
 import java.awt.*;
 import javax.swing.*;
 import java.awt.event.*;
