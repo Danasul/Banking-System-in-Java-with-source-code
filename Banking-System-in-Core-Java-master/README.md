@@ -106,6 +106,56 @@ demo- https://projectworlds.in/java-projects-with-source-code/banking-system-in-
 
 
 
+### Detailed Explanation of Core Components and Modules
+
+The Banking System consists of several core components and modules that work together to provide a comprehensive internet banking solution. Below is a breakdown of these components:
+
+
+## 1. User Interface (UI) Module
+
+**Description**:  
+This module is responsible for the front-end interactions. It is designed using **HTML** and **JavaScript** to facilitate user-friendly navigation and operations.
+
+**Key Features**:
+- **Dashboard for account management**: Users can easily view and manage their account details.
+- **Transaction history display**: A section where users can view a detailed list of their past transactions.
+
+
+
+## 2. Core Banking Logic Module
+
+**Description**:  
+This module contains the main business logic of the banking system, implemented in **Core Java**.
+
+**Key Features**:
+- **Customer account management**: Allows for the creation, deletion, and updating of customer accounts.
+- **Transaction processing**: Handles deposits, withdrawals, and money transfers between accounts.
+
+
+## 3. Database Module
+
+**Description**:  
+This module manages data storage and retrieval using **SQL**. It handles all database operations to ensure data integrity and security.
+
+**Key Features**:
+- **Transaction records management**: Stores details of all financial transactions performed within the system.
+- **Account information storage**: Keeps customer and account information in a secure and organized manner.
+
+
+
+## 4. Security Module
+
+**Description**:  
+This module implements various security features to protect user data and transactions.
+
+**Key Features**:
+- **Encryption of sensitive data**: Ensures that passwords and other sensitive information are securely stored and transferred.
+- **Session management**: Protects the system from unauthorized access by managing user sessions effectively.
+- **Input validation**: Prevents security vulnerabilities such as SQL injection by validating all input.
+
+
+
+
 ## Code Snippets and Examples
 
 This section highlights important parts of the Java banking system application, specifically focusing on account creation and money withdrawal functionalities.
